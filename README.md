@@ -1,3 +1,3 @@
 # Coffee-Break-Enjoyer
 
-Drop your resources here
+Drop your resources here guys :)
