@@ -8,10 +8,10 @@ Few questions to ask our Adviser's during our first consultation meeting with th
   4. Is there a need for us to use our own money for this project, like hosting if there is any or storage purchase if applicable.
   5. Can u tell us please how to initiate the project, like where to start and on what part of the project should we focus more and where is the hardest part. Which is most critical part of the project.
   6. Hello sir, after days of research we still can't figure out sa ETL part, so ask na kami pano to gawin sir kasi feel namin sa splunk, prometheus, jenkins at grafana lang medyo may knowledge kami since covered to sa lectures nang LMS?
-  Extract part - we don't know where and what will we extracted
+  Extract part - we don't know where and what will we extract
   Transform - using spark on jupyter notebook included na din po ba dto yung scheduling algorithm namin? at how to utilize the dataset we know na yung fake_employees yung applyan namin nang scheduling following yung rules about how many employeee per shift. at yung sa ticketdata.json san po namin ma gagamit yun. 
   Load - where to upload the data and which data
-  7. we needed an overview sa full operation nang whole system. like how does it looks like when the system is running. pang confirm nlang din to sa ano initial at partial ideas namin pano magwork ang system as a whole.
+  7. we needed an overview sa full operation nang whole system. like how does it looks like when the system is running. pang confirm nlang din to sa ano initial at partial ideas namin pano magwork ang system as a whole. preferably sa teams call sna to sir so we can listen while you discuss this kasi medyo mahaba at complicated ata to if eexplain through text.
 
 
 Feel free to add more
