@@ -13,3 +13,5 @@ Airflow - https://academy.astronomer.io/astronomer-certification-apache-airflow-
 https://towardsdatascience.com/setting-up-data-pipelines-using-apache-airflow-on-kubernetes-4506baea3ce0
 
 pyspark installation - https://sparkbyexamples.com/pyspark/how-to-install-pyspark-on-mac/
+
+nginx installation - https://www.geeksforgeeks.org/how-to-install-jupyter-notebook-on-macos/
