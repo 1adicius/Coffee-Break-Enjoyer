@@ -9,3 +9,5 @@ Data Engineering Pipeline using Python and Airflow - https://www.youtube.com/wat
 What is Data Pipeline | How to design Data Pipeline ? - ETL vs Data pipeline (2023) - https://www.youtube.com/watch?v=VtzvF17ysbc
 
 Airflow - https://academy.astronomer.io/astronomer-certification-apache-airflow-fundamentals-preparation
+
+https://www.altexsoft.com/blog/what-is-data-engineering-explaining-data-pipeline-data-warehouse-and-data-engineer-role/
