@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="https://d34ery7y7ckzql.cloudfront.net/aff3d554-9bda-41e7-b16a-39a015558036/DepartmentTemplates/a216f1c0-71bb-4589-a2fc-64d3078e6aa5/Color_Symbol-100(2).png"
+    />
+    <title>OpsWerks Shift Scheduler</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #555;
+      }
+
+      .navbar {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .navbar-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+      }
+
+      .navbar-logo {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+      }
+
+      .navbar-p {
+        color: #555;
+        font-weight: 500;
+        padding-left: 5px;
+        font-size: 20px;
+      }
+
+      .navbar-s {
+        color: #009267;
+      }
+
+      .navbar-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+      }
+
+      .navbar-profile {
+        font-weight: 500;
+        font-size: 14px;
+        padding-right: 5px;
+      }
+
+      .navbar-github {
+        width: 30px;
+        height: 30px;
+      }
+
+      .content-scheduler {
+        /* width: 1000px; 
+        padding: 20px; 
+        border: 1px solid #ddd;
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
+        margin: 10px 10px auto 10px;
+      }
+
+      .content-title,
+      .form-employee {
+        margin: 10px;
+        color: #555;
+      }
+
+      .form-employee-input,
+      .form-shift,
+      .form-month {
+        padding: 4px;
+      }
+
+      .button-add,
+      .button-update,
+      button {
+        border: none;
+        padding: 4px;
+        width: 70px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .button-add,
+      .button-update,
+      .button-edit,
+      .button-delete {
+        background-color: #009267;
+        color: white;
+      }
+
+      .button-add:hover,
+      .button-update:hover,
+      .button-edit:hover,
+      .button-delete:hover {
+        background-color: white;
+        color: #009267;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-left">
+        <img
+          class="navbar-logo"
+          src="https://d34ery7y7ckzql.cloudfront.net/aff3d554-9bda-41e7-b16a-39a015558036/DepartmentTemplates/a216f1c0-71bb-4589-a2fc-64d3078e6aa5/Color_Symbol-100(2).png"
+          alt=""
+        />
+        <p class="navbar-p">Ops<span class="navbar-s">Werks</span></p>
+      </div>
+      <div class="navbar-right">
+        <span class="navbar-profile">Data Engineering</span>
+        <a href="https://github.com/opswerks-academy" target="_blank">
+          <img
+            class="navbar-github"
+            src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+            alt="GitHub Logo"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="content-scheduler">
+      <h1 class="content-title">Employee Shift Schedule</h1>
+
+      <!-- <form id="filterForm">
+       
+      </form> -->
+
+      <form class="form-employee" id="addForm">
+        <label for="newEmployee">Employee:</label>
+        <input
+          class="form-employee-input"
+          type="text"
+          id="newEmployee"
+          placeholder="Enter employee name"
+          required
+        />
+
+        <label for="newShift">Shift:</label>
+        <select class="form-shift" id="newShift" required>
+          <option value="Morning">Morning Shift</option>
+          <option value="Mid">Mid Shift</option>
+          <option value="Night">Night Shift</option>
+        </select>
+
+        <label for="newMonth">Month:</label>
+        <select class="form-month" id="newMonth" required>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+
+        <input
+          class="button-add"
+          type="button"
+          value="Add"
+          onclick="addRow()"
+        />
+        <input
+          class="button-update"
+          type="button"
+          value="Update"
+          onclick="updateRow()"
+        />
+      </form>
+
+      <table id="scheduleTable">
+        <tr>
+          <th>Employee</th>
+          <th>Shift</th>
+          <th>Month</th>
+          <th>Action</th>
+        </tr>
+      </table>
+
+      <script>
+        var selectedRow = null;
+
+        window.onload = function () {
+          loadData();
+        };
+
+        function addRow() {
+          var table = document.getElementById("scheduleTable");
+          var newRow = table.insertRow(table.rows.length);
+
+          var newEmployee = document.getElementById("newEmployee").value;
+          var newShift = document.getElementById("newShift").value;
+          var newMonth = document.getElementById("newMonth").value;
+
+          var cell1 = newRow.insertCell(0);
+          var cell2 = newRow.insertCell(1);
+          var cell3 = newRow.insertCell(2);
+          var cell4 = newRow.insertCell(3);
+
+          cell1.innerHTML = newEmployee;
+          cell2.innerHTML = newShift;
+          cell3.innerHTML = newMonth;
+          cell4.innerHTML =
+            '<button class="button-edit" onclick="editRow(this)">Edit</button> <button class="button-delete" onclick="deleteRow(this)">Delete</button>';
+
+          // Clear the input fields after adding the row
+          document.getElementById("newEmployee").value = "";
+          document.getElementById("newShift").value = "";
+          document.getElementById("newMonth").value = "";
+
+          saveData();
+        }
+
+        function editRow(button) {
+          var row = button.parentNode.parentNode;
+          var cells = row.getElementsByTagName("td");
+
+          var employee = cells[0].innerText;
+          var shift = cells[1].innerText;
+          var month = cells[2].innerText;
+
+          // Set the values in the "Add" form fields for editing
+          document.getElementById("newEmployee").value = employee;
+          document.getElementById("newShift").value = shift;
+          document.getElementById("newMonth").value = month;
+
+          // Store the selected row for update
+          selectedRow = row;
+        }
+
+        function updateRow() {
+          if (selectedRow) {
+            var employee = document.getElementById("newEmployee").value;
+            var shift = document.getElementById("newShift").value;
+            var month = document.getElementById("newMonth").value;
+
+            selectedRow.cells[0].innerText = employee;
+            selectedRow.cells[1].innerText = shift;
+            selectedRow.cells[2].innerText = month;
+
+            // Clear the input fields after updating the row
+            document.getElementById("newEmployee").value = "";
+            document.getElementById("newShift").value = "";
+            document.getElementById("newMonth").value = "";
+
+            // Reset the selected row
+            selectedRow = null;
+
+            saveData();
+          }
+        }
+
+        function deleteRow(button) {
+          var row = button.parentNode.parentNode;
+          row.parentNode.removeChild(row);
+
+          saveData();
+        }
+
+        function saveData() {
+          var scheduleData = [];
+          var table = document.getElementById("scheduleTable");
+          for (var i = 1; i < table.rows.length; i++) {
+            var cells = table.rows[i].cells;
+            var rowData = {
+              employee: cells[0].innerText,
+              shift: cells[1].innerText,
+              month: cells[2].innerText,
+            };
+            scheduleData.push(rowData);
+          }
+          localStorage.setItem("scheduleData", JSON.stringify(scheduleData));
+        }
+
+        function loadData() {
+          var scheduleData = localStorage.getItem("scheduleData");
+          if (scheduleData) {
+            scheduleData = JSON.parse(scheduleData);
+            var table = document.getElementById("scheduleTable");
+            for (var i = 0; i < scheduleData.length; i++) {
+              var newRow = table.insertRow(table.rows.length);
+              var cell1 = newRow.insertCell(0);
+              var cell2 = newRow.insertCell(1);
+              var cell3 = newRow.insertCell(2);
+              var cell4 = newRow.insertCell(3);
+              cell1.innerHTML = scheduleData[i].employee;
+              cell2.innerHTML = scheduleData[i].shift;
+              cell3.innerHTML = scheduleData[i].month;
+              cell4.innerHTML =
+                '<button class="button-edit" onclick="editRow(this)">Edit</button> <button class="button-delete" onclick="deleteRow(this)">Delete</button>';
+            }
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
