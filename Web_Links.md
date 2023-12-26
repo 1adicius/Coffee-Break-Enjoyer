@@ -14,4 +14,4 @@ https://towardsdatascience.com/setting-up-data-pipelines-using-apache-airflow-on
 
 pyspark installation - https://sparkbyexamples.com/pyspark/how-to-install-pyspark-on-mac/
 
-nginx installation - https://www.geeksforgeeks.org/how-to-install-jupyter-notebook-on-macos/
+jupyter installation - https://www.geeksforgeeks.org/how-to-install-jupyter-notebook-on-macos/
