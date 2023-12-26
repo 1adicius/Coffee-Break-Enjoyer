@@ -10,3 +10,5 @@ What is Data Pipeline | How to design Data Pipeline ? - ETL vs Data pipeline (20
 
 Airflow - https://academy.astronomer.io/astronomer-certification-apache-airflow-fundamentals-preparation
 
+https://towardsdatascience.com/setting-up-data-pipelines-using-apache-airflow-on-kubernetes-4506baea3ce0
+
