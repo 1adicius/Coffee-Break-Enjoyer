@@ -15,3 +15,5 @@ https://towardsdatascience.com/setting-up-data-pipelines-using-apache-airflow-on
 pyspark installation - https://sparkbyexamples.com/pyspark/how-to-install-pyspark-on-mac/
 
 jupyter installation - https://www.geeksforgeeks.org/how-to-install-jupyter-notebook-on-macos/
+
+ssh-key - https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
