@@ -1,0 +1,50 @@
+
+Wednesday (27):
+  - Whatever is discussed during the meeting, we should come up with strategy which will be prioritized
+  - CI/CD of the jenkins should start working
+  - the output of the transformed data is available on nginx as static output
+  - pyspark and jupyter python working
+  - ETL pipeline should be complete (Extract and Load)
+  - how to access the data storage
+  - ssh-key
+  - finalizing which part of the solution must-haves should be prioritized
+
+Thursday (28):
+  - Airflow
+
+
+
+Friday (29):
+  - reserved for extended task
+
+
+
+
+
+Saturday (30):
+  - reserved for extended task
+
+
+
+
+Sunday (31):
+  - Logging, Alerting, Monitoring tools and DORA metric
+  - splunk, prometheus and grafana
+  - 1 each then if ever a member finished his task move to other tool to help the other member
+  - assign 1 tool per member
+
+
+
+Monday (1):
+  - introduce failures and runbooks
+
+
+Tuesday (2):
+  - finalizing documentation, introducing failures and making runbooks
+
+
+Wednesday (3):
+  - finalizing presentation and dry run of presentation
+
+
+
