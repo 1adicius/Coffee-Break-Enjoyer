@@ -1,9 +1,10 @@
-# Coffee-Break-Enjoyer
-
-Drop your resources here guys :)
-
->> WEB LINK -- In that folder you can drop video and resources links
-
+#### Case Study Description:
+The case study aims to create a Data Science Application and service an ETL pipeline for an employee scheduling system for a 24/7 operational environment deployed in a Kubernetes Cluster following the below restrictions and considerations.
+  * No employee should be alone in their shift
+  * Ensure that night shifts have at least two (2) or (3) members
+  * A 24-hr shift operation is divided into 3 shifting schedules: Morning, Mid and Night shift
+  * An employee should only go to work for 5 days per week
+  * The shift of an employee changes once a month
 
 ## Setting up your local machine to connect to kubernetes cluster provided by the mentors
 follow the installation process here:
