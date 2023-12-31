@@ -84,10 +84,10 @@ https://docs.google.com/document/d/1M6kPuR1pQQcd-McMTnXzjviUePms_e3lHSA03k9T4Mg/
 github repo used for the Airflow DAG files and pysparkjob for scheduling: https://github.com/opswerks/test-airflow-dags
 
 Other tools provided by the mentors:
-https://splunk-a2t-pe-cs1-f.acad.opswerks.net/
-https://jenkins-a2t-pe-cs1-f.acad.opswerks.net/
-https://grafana-a2t-pe-cs1-f.acad.opswerks.net/
-https://airflow-a2t-pe-cs1-f.acad.opswerks.net
+  * https://splunk-a2t-pe-cs1-f.acad.opswerks.net/
+  * https://jenkins-a2t-pe-cs1-f.acad.opswerks.net/
+  * https://grafana-a2t-pe-cs1-f.acad.opswerks.net/
+  * https://airflow-a2t-pe-cs1-f.acad.opswerks.net
 
 
 
