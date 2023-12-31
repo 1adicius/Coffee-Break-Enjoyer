@@ -8,6 +8,9 @@ install brew on your mac
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+```sh
+brew --version
+```
 install python3, scala, openjdk@11, apache-spark and jupyter notebook
 ```sh
 brew install python3
@@ -29,6 +32,13 @@ To check if everything is installed successfully:
 ```sh
 spark-submit --version
 ```
+```sh
+jupyter notebook
+```
+```sh
+python3 --version
+```
+
 
 
 
