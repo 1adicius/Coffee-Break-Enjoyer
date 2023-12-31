@@ -8,9 +8,11 @@ Drop your resources here guys :)
 ## Setting up your local machine to connect to kubernetes cluster provided by the mentors
 follow the installation process here:
 https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
-in your terminal try: 
+
 download a2t-pe-cs1-F-kubeconfig.yaml and store it to your home dir
+```sh
 mv ~/Downloads/a2t-pe-cs1-F-kubeconfig.yaml ~
+```
 ```sh
 export KUBECONFIG=~/a2t-pe-cs1-F-kubeconfig.yaml
 ```
