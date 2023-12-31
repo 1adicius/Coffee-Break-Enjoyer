@@ -30,7 +30,7 @@ kubectl get nodes
 ```
 This is to make your connection to the cluster persist ever after restart of your terminal:
 ```sh
-echo "export KUBECONFIG=~/a2t-pe-cs1-F-kubeconfig.yaml" > .zshrc
+echo "export KUBECONFIG=~/a2t-pe-cs1-F-kubeconfig.yaml" >> ~/.zshrc
 ```
 ```sh
 source ~/.zshrc
