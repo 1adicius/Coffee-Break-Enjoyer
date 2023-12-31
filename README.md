@@ -71,6 +71,12 @@ jupyter notebook
 python3 --version
 ```
 
+### Link for the Full Documentation:
+https://docs.google.com/document/d/1M6kPuR1pQQcd-McMTnXzjviUePms_e3lHSA03k9T4Mg/edit?usp=sharing
+
+github repo used for the Airflow DAG files and pysparkjob for scheduling: https://github.com/opswerks/test-airflow-dags
+
+
 
 
 
