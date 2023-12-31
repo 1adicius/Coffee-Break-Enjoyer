@@ -1,5 +1,5 @@
 # Data Engineering: Pipeline Implementation
-# Case Study Description: 
+## Case Study Description: 
 The case study aims to create a Data Science Application and service an ETL pipeline for an employee scheduling system for a 24/7 operational environment deployed in a Kubernetes Cluster following the below restrictions and considerations.
   * No employee should be alone in their shift
   * Ensure that night shifts have at least two (2) or (3) members
